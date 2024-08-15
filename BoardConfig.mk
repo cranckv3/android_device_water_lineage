@@ -8,7 +8,13 @@ DEVICE_PATH := device/xiaomi/water
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
+AB_OTA_PARTITIONS += \
+    system \
+    vbmeta_system \
+    boot \
+    product \
+    vbmeta_vendor \
+    vendor
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
@@ -57,7 +63,10 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_SUPER_PARTITION_SIZE := 3758096384 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product odm
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+    product \
+    vendor \
+    system
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 3753902080 # TODO: Fix hardcoded value
 
 # Platform
@@ -88,7 +97,11 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Inherit the proprietary files
 include vendor/xiaomi/water/BoardConfigVendor.mk
