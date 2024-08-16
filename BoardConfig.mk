@@ -126,6 +126,32 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.biometrics.fingerprint@2.1-service.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.boot@1.2.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.cas@1.2-service-lazy.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.dumpstate@1.1-service.xiaomi.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.health@2.1.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.security.keymint-service.mitee.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.security.secureclock-service.mitee.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.security.sharedsecret-service.mitee.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.usb@1.2-service-mediatekv2.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.wifi.hostapd.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.wifi.supplicant.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/android.hardware.wifi@1.0-service.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/gnss-default.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/gnss@2.1-service.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/lbs_hidl_service@1.0.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/lights-mtk-default.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_android.hardware.drm@1.4-service.clearkey.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_android.hardware.drm@1.4-service.widevine.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_hwcomposer.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_media_c2_V1_2_default.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/power-default.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vendor.xiaomi.hardware.misys@1.0.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vendor.xiaomi.hardware.misys@2.0.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vendor.xiaomi.hardware.misys@3.0.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vibrator-mtk-default.xml
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
