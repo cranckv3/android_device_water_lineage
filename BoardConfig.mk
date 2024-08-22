@@ -95,6 +95,13 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := water,cloud
+
+# MTK Hardware
+BOARD_HAS_MTK_HARDWARE := true
+BOARD_USES_MTK_HARDWARE := true
+
 # Treble
 BOARD_VNDK_VERSION  := current
 
