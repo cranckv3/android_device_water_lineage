@@ -402,3 +402,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/water/water-vendor.mk)
+$(call inherit-product, vendor/xiaomi/ims-water/mtk-ims.mk)
