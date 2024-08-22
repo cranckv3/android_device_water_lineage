@@ -154,7 +154,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vendor.xiaomi.hardware.misys
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/vibrator-mtk-default.xml
 
 # SELinux
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
+#include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
