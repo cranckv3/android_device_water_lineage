@@ -8,7 +8,7 @@ Both devices are essentially unified under internal codename, WATER.
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
 | CPU                     | Octa-core                                                                                                                      |
-| Chipset                 | MediaTek MT6765 Helio G36 (12 nm)                                                                                                            |
+| Chipset                 | MediaTek MT6765V Helio G36 (12 nm)                                                                                                            |
 | GPU                     | PowerVR GE8320                                                                                                                   |
 | Memory                  | 3/6 GB RAM                                                                                                                   |
 | Shipped Android Version | Android 13                                                                                                                            |
@@ -17,3 +17,8 @@ Both devices are essentially unified under internal codename, WATER.
 | Display                 | 720 x 1600 pixels, 20:9 ratio (~269 ppi density)                                                                              |
 | Camera (Back)(Main)     | 8 MP, f/2.0, (wide) 0.08 MP (auxiliary lens)                                                                >
 | Camera (Front)          | 5 MP, f/2.2                                                                                      |
+
+# Device picture 
+![xiaomi-redmi-a2-1](https://github.com/user-attachments/assets/dded9f27-ca55-4c60-9834-6a1f3d72de71)
+
+![xiaomi-poco-c51-1](https://github.com/user-attachments/assets/8b6ff2a3-1b0e-45bc-ba7a-eb1e6fc9c677)
