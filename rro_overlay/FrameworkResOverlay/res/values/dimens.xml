@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="config_highResTaskSnapshotScale">0.8</item>
+    <item type="dimen" name="config_lowResTaskSnapshotScale">0.3</item>
+    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.5</item>
+    <item type="dimen" name="config_screenBrightnessSettingMaximumFloat">1.0</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.003421309</item>
+</resources>

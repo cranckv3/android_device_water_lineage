@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "FrameworkResOverlayExt",
+    theme: "FrameworkResOverlayExt",
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}
