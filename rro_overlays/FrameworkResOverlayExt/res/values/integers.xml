@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+    <integer name="config_brightness_ramp_rate_fast">2466</integer>
+    <integer name="config_brightness_ramp_rate_slow">1973</integer>
+    <integer name="config_defaultPeakRefreshRate">61</integer>
+    <integer name="config_defaultRefreshRate">61</integer>
+    <integer name="config_screenBrightnessForVrSettingDefault">688</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">2047</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">632</integer>
+</resources>

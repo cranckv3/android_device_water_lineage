@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="string" name="def_private_dns_default_mode" id="0x7f010000" />
+</resources>
