@@ -70,8 +70,22 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_SUPER_PARTITION_SIZE := 3758096384 # TODO: Fix hardcoded value
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 536870912
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 536870912
+partitions {
+    system@0 {
+        label = "system";
+        size = <0x40000000>; /* 1 GB */
+    };
+
+    product@40000000 {
+        label = "product";
+        size = <0x20000000>; /* 512 MB */
+    };
+
+    vendor@60000000 {
+        label = "vendor";
+        size = <0x20000000>; /* 512 MB */
+    };
+};
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     product \
