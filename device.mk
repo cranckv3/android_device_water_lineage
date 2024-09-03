@@ -197,12 +197,12 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor \
     libcamera2ndk_vendor
 
-PRODUCT_PACKAGES += \
-    libcameracustom
+# PRODUCT_PACKAGES += \
+#   libcameracustom
 
 # Biometrics
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.water
+# PRODUCT_PACKAGES += \
+#    android.hardware.biometrics.fingerprint@2.3-service.water
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -295,7 +295,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2-impl
+  #  vendor.mediatek.hardware.mtkpower@1.2-impl
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -369,7 +369,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
-    fstab.mt6765 \
+    # fstab.mt6765 \
     init.mt6765.rc \
     init.mt6765.usb.rc \
     init.project.rc \
@@ -381,8 +381,8 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     meta_init.rc \
     multi_init.rc \
-    init.recovery.mt6765.rc \
-    ueventd.qcom.rc \
+    # init.recovery.mt6765.rc \
+    # ueventd.qcom.rc \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
