@@ -111,9 +111,9 @@ BOARD_VNDK_VERSION  := current
 
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/device/xiaomi/water/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/device/xiaomi/water/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/device/xiaomi/water/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.enableswap
