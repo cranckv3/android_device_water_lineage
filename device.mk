@@ -260,7 +260,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-ims-base
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/sysconfig/com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/com.mediatek.ims.xml
+    $(DEVICE_PATH)/com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/com.mediatek.ims.xml
 
 # Keymaster
 PRODUCT_PACKAGES += \
